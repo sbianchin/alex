@@ -1,0 +1,12 @@
+
+void Batch_Distance_Fit(int Run_Number, int flag, int min_evt = 0, int max_evt = 0) {
+
+  ofstream fout;
+
+
+  char Name_finput[200];
+  sprintf(Name_finput,"G4Run%d.root", Run_Number);
+  cout << "File opened:  " << Name_finput << endl;
+  TChain fChain("Kaon");
+  fChain.Add(Name_finput);
+  Int_t nentries = (Int_t)fChain.GetEntries();

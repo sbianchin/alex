@@ -1,0 +1,13 @@
+function definitions/descriptions
+
+SFT_Test_CR.C: version of SFT_Test used in C2_SFT_Histo.C.
+
+SFT_functions.h: contains all the functions used by Event_Display and Event_Display_Cosmic_Rays to calculate and output the SFT-Z values.
+
+SFT_functions_test.h: test version of SFT_functions, not used anymore.
+
+C2_SFT_Histo.C: generates the d(theta) histogram. needs the files called Run_evtNum_Event_Angles_numEvents.txt to run. (ex Run4560_Event_Angles_100.txt for first 100 events).
+
+Event_Batch.C: produces a file containing data from each event in a run.
+
+SFT_Test.C: used to run only the SFT-Z values for events.
